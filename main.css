@@ -24,6 +24,7 @@
   height: 100vh;
   margin: 0 auto;
   background: rgba(0,0,0,0.2);
+  display: contents;
 }
 
 .photo{
@@ -34,8 +35,10 @@
 }
 
 .author{
+  top:50px;
   width:100%;
   position: relative;
+  border:3px solid white;
 }
 
 .line{
