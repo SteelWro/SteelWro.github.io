@@ -1,0 +1,15 @@
+.transparent-input {
+   background-color: rgba(0, 0, 0, 0);
+   border-bottom: 1px solid white !important;
+}
+
+ input.transparent-input{
+       background-color:rgba(0,0,0,0) !important;
+       border-bottom:1px solid white !important;
+       box-shadow:none !important;
+    }
+    textarea.transparent-input{
+        background-color:rgba(0,0,0,0) !important;
+        border-bottom:1px solid white !important;
+        box-shadow:none !important;
+     }

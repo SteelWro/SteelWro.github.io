@@ -1,6 +1,5 @@
 body{
   color: rgb(255, 252, 239) !important;
-  font-family: 'Josefin Sans', sans-serif !important;
    
 }
 html{
@@ -25,8 +24,13 @@ html{
   height: 100vh;
 }
 
+.pageTitle{
+  margin-top: 40px;
+  font-family: 'IBM Plex Mono', monospace !important;
+}
+
 .background {
-  background: rgb(0, 0, 0) !important;
+  background: rgb(0, 0, 0);
   /* background: url("images/background.jpg") no-repeat; */
   background-size: 100% auto;
   position: fixed;
@@ -38,13 +42,15 @@ html{
 }
 
 .wrapper {
-  font-weight: 300;
+  font-family: 'IBM Plex Mono', monospace !important;
+  font-weight: 100;
   font-size: 1.25rem;
-  padding-top: 70px;
   max-width: 1200px;
   height: 100vh;
   margin: 0 auto;
+  padding: 70px 20px 0 20px;
   display: block; 
+  position: relative;
 }
 
 .photo{
@@ -73,7 +79,6 @@ html{
   display:block;
 }
 
-
 .pageTitle{
   text-align: center;
   font-family: 'Source Sans Pro', sans-serif;
@@ -84,6 +89,14 @@ html{
 }
 
 .section-article{
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 

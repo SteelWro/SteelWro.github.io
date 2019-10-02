@@ -7,3 +7,5 @@ function parallax() {
   $('.background').css('top', -(scrolled * 0.15) + 'px');
 }
 
+
+
