@@ -1,14 +1,23 @@
+body{
+  color: rgb(255, 252, 239) !important;
+  font-family: 'Josefin Sans', sans-serif !important;
+   
+}
 html{
   scroll-behavior: smooth;
   font-family: 'Source Sans Pro', sans-serif;
-  @media (max-width: 768px) {
-    font-size: 5px;
-    background: black;
+  
+}
+
+@media (max-width: 768px) {
+  .wrapper{
+    min-height: 150vh;
   }
 }
 
 .navbar-collapse {
   justify-content: center;
+  margin:0;
 }
 
 .top-bar__img {
@@ -17,8 +26,8 @@ html{
 }
 
 .background {
-  background: rgba(0,0,0,0.2);
-  background: url("images/background.jpg") no-repeat;
+  background: rgb(0, 0, 0) !important;
+  /* background: url("images/background.jpg") no-repeat; */
   background-size: 100% auto;
   position: fixed;
   width: 200%;
@@ -29,18 +38,19 @@ html{
 }
 
 .wrapper {
+  font-weight: 300;
+  font-size: 1.25rem;
+  padding-top: 70px;
   max-width: 1200px;
   height: 100vh;
   margin: 0 auto;
-  display: block;
-  border: 3px solid black;
+  display: block; 
 }
 
 .photo{
   margin: auto;
   height:220px;
   weight:200px;
-  border:3px solid white;
 }
 
 .line{
@@ -57,12 +67,10 @@ html{
   display:block;
   width:100%;
   position: relative;
-  border: 3px solid green;
 }
 
 .author-description{
   display:block;
-  border: 3px solid pink;
 }
 
 
@@ -76,5 +84,6 @@ html{
 }
 
 .section-article{
- border: 3px solid red;
 }
+
+
