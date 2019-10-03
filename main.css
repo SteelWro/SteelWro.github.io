@@ -9,9 +9,25 @@ html{
 }
 
 @media (max-width: 768px) {
-  .wrapper{
-    min-height: 150vh;
+  .row-wrapper{
+    font-weight: 300 !important;
+    font-size:0.5rem !important;
+    width: 100%;
   }
+  .row-text{
+    font-size: 0.75rem;
+  }
+}
+
+.row-wrapper {
+  font-family: 'IBM Plex Mono', monospace !important;
+  font-weight: 100;
+  font-size: 1.25rem;
+  max-width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  padding: 70px 20px 0 20px;
+  position: relative;
 }
 
 .navbar-collapse {
@@ -49,7 +65,7 @@ html{
   height: 100vh;
   margin: 0 auto;
   padding: 70px 20px 0 20px;
-  display: block; 
+
   position: relative;
 }
 
@@ -86,9 +102,7 @@ html{
 
 .pageSubTitle{
   margin:20px;
-}
-
-.section-article{
+  text-align: center;
 }
 
 .vertical-center {
@@ -97,6 +111,11 @@ html{
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+.col-md-3{
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
 }
 
 
