@@ -13,18 +13,30 @@ html{
     font-weight: 300 !important;
     font-size:0.5rem !important;
     width: 100%;
+    height: auto !important;
   }
   .row-text{
     font-size: 0.75rem;
   }
 }
 
+@media (min-width: 769px){
+ .row{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+ } 
+}
+
+
 .row-wrapper {
   font-family: 'IBM Plex Mono', monospace !important;
   font-weight: 100;
   font-size: 1.25rem;
   max-width: 1200px;
-  height: auto;
+  height: 100vh;
   margin: 0 auto;
   padding: 70px 20px 0 20px;
   position: relative;
@@ -117,5 +129,6 @@ html{
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 4px;
 }
+
 
 
