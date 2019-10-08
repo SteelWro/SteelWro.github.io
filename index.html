@@ -9,6 +9,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="form.css">
+  <link rel="stylesheet" href="welcome.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="/css/all.css" rel="stylesheet">
@@ -26,14 +27,14 @@
     <div class="background">
       </div>
       
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top bg-white text-dark">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top bg-white text-dark ">
     <a class="navbar-brand" href="#">#Artur Ćwikliński</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
       aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
   
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo02">
       <ul class="navbar-nav">
         <li class="nav-item ">
           <a class="nav-link" href="#section1">Główna <span class="sr-only">(current)</span></a>
@@ -44,7 +45,10 @@
         <li class="nav-item">
           <a class="nav-link" href="#section3">Portfolio</a>
         </li><li class="nav-item">
-          <a class="nav-link" href="#section4">Kontakt</a>
+          <a class="nav-link" href="#section4">Media</a>
+        </li>
+        </li><li class="nav-item">
+          <a class="nav-link" href="#section5">Kontakt</a>
         </li>
       </ul>
     </div>
@@ -56,12 +60,13 @@
           <div class="line"></div>
         </div>
     <header class="author-description">
-      <h1 class="pageTitle revealTitle vertical-center">Cześć, jestem Artur :D</h1>
+      <h1 class="pageTitle revealTitle vertical-center mt-5">Cześć, jestem Artur :D</h1>
     </header>
     </section>
   </article>
   <article id="section2" class="wrapper">
-    <section class="section-article vertical-center">
+      <h2 class="pageSubTitle">O mnie</h2>
+    <section class="section-article vertical-center p-5">
       <p>Pochodzę z Radomska a aktualnie mieszkam we Wrocławiu gdzie stawiam swoje pierwsze kroki w IT. Aktualnie jestem 23 letnim młodszym specjalistą IT 
         a w międzyczasie zaczynam ostatni, IV rok na studiach w Wrocławskiej Szkole Informatyki Stosowanej we Wrocławiu który zakończę obroną tytułu inżyniera.
         Jako Freelancer do chwili obecnej bawię się projektowaniem grafiki. Od 1,5 roku czynnie staram się uczyć i rozwijać w programowaniu by w przyszłości 
@@ -95,7 +100,20 @@
       </div>
     </section>
   </article>
-      <article id="section4" class="wrapper">
+  <article id="section4" class="wrapper">
+      <h2 class="pageSubTitle">Odwiedź mnie:</h2>
+    <section class="section-article p-5">
+      <div class="row m-auto">
+        <div class="col-sm m-5 bg-transparent"><i class="fab fa-github fa-9x"></i></div>
+        <div class="col-sm m-5 bg-transparent"><i class="fab fa-facebook fa-9x"></i></div>
+        <div class="col-sm m-5 bg-transparent"><i class="fab fa-instagram fa-9x"></i></div>
+    </div>
+    </section>
+  </article>
+      <article id="section5" class="wrapper">
+        <h2 class="m-5">
+          <p>Możesz do mnie szybko wysłać maila,</p>
+          <p>pogadamy przy piwie? <i class="fas fa-beer fa-1x"></i></p></h2>
         <div class="col-md-6 wow animated fadeInRight vertical-center" data-wow-delay=".2s">
           <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
               <!-- Name -->
@@ -119,18 +137,19 @@
               <!-- Message -->
               <div class="form-group label-floating">
                   <label for="message" class="control-label">Wiadomość</label>
-                  <textarea class="form-control transparent-input" rows="3" id="message" name="message" required data-error="Write your message"></textarea>
+                  <textarea class="form-control transparent-input color-white" rows="3" id="message" name="message" required data-error="Write your message"></textarea>
                   <div class="help-block with-errors"></div>
               </div>
               <!-- Form Submit -->
               <div class="form-submit mt-5">
-                  <button class="btn btn-transparent border-white text-white" type="submit" id="form-submit"><i class="material-icons mdi mdi-message-outline"></i>Wyślij</button>
+                  <button class="btn btn-outline-secondary border-white text-white" type="submit" id="form-submit"><i class="material-icons mdi mdi-message-outline"></i>Wyślij</button>
                   <div id="msgSubmit" class="h3 text-center hidden"></div>
                   <div class="clearfix"></div>
               </div>
           </form>
       </div>
           </article>
+          
 
   
 

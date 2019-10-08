@@ -10,13 +10,15 @@ html{
 
 @media (max-width: 768px) {
   .row-wrapper{
-    font-weight: 300 !important;
-    font-size:0.5rem !important;
     width: 100%;
     height: auto !important;
   }
   .row-text{
     font-size: 0.75rem;
+  }
+  .section-article{
+    font-weight: 300 !important;
+    font-size:0.8rem !important;
   }
 }
 
@@ -42,18 +44,9 @@ html{
   position: relative;
 }
 
-.navbar-collapse {
-  justify-content: center;
-  margin:0;
-}
-
-.top-bar__img {
-  width: 100%;
-  height: 100vh;
-}
 
 .pageTitle{
-  margin-top: 40px;
+  margin-top: 30px;
   font-family: 'IBM Plex Mono', monospace !important;
 }
 
@@ -77,34 +70,7 @@ html{
   height: 100vh;
   margin: 0 auto;
   padding: 70px 20px 0 20px;
-
   position: relative;
-}
-
-.photo{
-  margin: auto;
-  height:220px;
-  weight:200px;
-}
-
-.line{
-  bottom:50%;
-  width: 100%;
-  height: 50vh;
-  background-color:white;
-  position: absolute;
-  z-index: -1;
-}
-
-.author{
-  margin:50px 0 0 0;
-  display:block;
-  width:100%;
-  position: relative;
-}
-
-.author-description{
-  display:block;
 }
 
 .pageTitle{
@@ -128,6 +94,14 @@ html{
 .col-md-3{
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 4px;
+}
+
+.navbar-brand{
+  position:absolute;
+}
+
+.transparent-input{
+  color:white !important;
 }
 
 
