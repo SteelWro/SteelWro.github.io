@@ -1,0 +1,17 @@
+.fa-github:hover, .fa-facebook:hover, .fa-instagram:hover{
+    color: rgb(148, 92, 92);
+}
+
+.fa-github, .fa-facebook, .fa-instagram{
+    transition:0.5s ease-in-out;
+}
+
+.portfolio-box:hover{
+    border-radius:20px;
+    background: rgb(143, 110, 110);
+}
+
+.portfolio-box{
+    -webkit-transition: background 0.5s ease-in-out, border-radius 1s ease-in-out;
+    transition: background 0.5s ease-in-out, border-radius 1s ease-in-out;
+}

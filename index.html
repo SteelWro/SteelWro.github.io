@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="form.css">
   <link rel="stylesheet" href="welcome.css">
+  <link rel="stylesheet" href="hover.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="/css/all.css" rel="stylesheet">
@@ -34,8 +35,8 @@
       <span class="navbar-toggler-icon"></span>
     </button>
   
-    <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo02">
-      <ul class="navbar-nav">
+    <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-5">
         <li class="nav-item ">
           <a class="nav-link" href="#section1">Główna <span class="sr-only">(current)</span></a>
         </li>
@@ -76,44 +77,53 @@
     </section>
   </article>
   <article id="section3" class="row-wrapper">
-  <h2 class="pageSubTitle">Moje wypociny</h2>
+  <h2 class="pageSubTitle">Moje projekty:</h2>
   <section class="section-article">
-      <div class="row">
-        <div class="col-md-3 text-center m-5">
-          <div class="m-5">
-              <i class="fas fa-cloud-upload-alt fa-7x"></i>
+    <div class="container vertical-center">
+      <div class="row mx-md-n5">
+        <div class="col-sm text-center">
+         <div class="h-100 p-3 portfolio-box">
+            <div class="m-5">
+                <i class="fas fa-cloud-upload-alt fa-7x"></i>
+            </div>
+            <h2 class="m-2 mb-5 row-text">Chmura na zdjęcia</h2>
           </div>
-          <h2 class="m-2 mb-5 row-text">Chmura na zdjęcia</h2>
         </div>
-        <div class="col-md-3 text-center m-5">
-          <div class="m-5">
-            <i class="fas fa-search fa-7x"></i>
+        <div class="col-sm text-center">
+          <div class="h-100 p-3 portfolio-box">
+              <div class="m-5">
+                  <i class="fas fa-search fa-7x"></i>
+                </div>
+                <h2 class="m-2 mb-5 row-text">Rozpoznawanie tekstu na obrazie</h2>
+              </div>
           </div>
-          <h2 class="m-2 mb-5 row-text">Rozpoznawanie tekstu na obrazie</h2>
-        </div>
-        <div class="col-md-3 text-center m-5">
-          <div class="m-5">
-              <i class="fas fa-smog fa-7x"></i>
+        <div class="col-sm text-center">
+          <div class="h-100 p-3 portfolio-box">
+              <div class="m-5">
+                  <i class="fas fa-smog fa-7x"></i>
+              </div>
+              <h2 class="m-2 mb-5 row-text">Pogodynka</h2>
+            </div>
           </div>
-          <h2 class="m-2 mb-5 row-text">Pogodynka</h2>
-        </div>
       </div>
     </section>
   </article>
-  <article id="section4" class="wrapper">
+  <article id="section4" class="row-wrapper">
       <h2 class="pageSubTitle">Odwiedź mnie:</h2>
-    <section class="section-article p-5">
-      <div class="row m-auto">
-        <div class="col-sm m-5 bg-transparent"><i class="fab fa-github fa-9x"></i></div>
-        <div class="col-sm m-5 bg-transparent"><i class="fab fa-facebook fa-9x"></i></div>
-        <div class="col-sm m-5 bg-transparent"><i class="fab fa-instagram fa-9x"></i></div>
+    <section class="section-article">
+      <div class="container vertical-center">
+      <div class="row">
+          <div class="col-sm bg-transparent text-center"><i class="fab fa-github fa-9x"></i></div>
+            <div class="col-sm bg-transparent text-center"><i class="fab fa-facebook fa-9x"></i></div>
+            <div class="col-sm bg-transparent text-center"><i class="fab fa-instagram fa-9x"></i></div>         
     </div>
+  </div>
     </section>
   </article>
       <article id="section5" class="wrapper">
-        <h2 class="m-5">
-          <p>Możesz do mnie szybko wysłać maila,</p>
-          <p>pogadamy przy piwie? <i class="fas fa-beer fa-1x"></i></p></h2>
+        <h2 class="m-5 beer">
+          <p>Możesz do mnie szybko wysłać maila <i class="fas fa-smile fa-1x"></i></p>
+          <p>Pogadamy przy piwie? <i class="fas fa-beer fa-1x"></i></p></h2>
         <div class="col-md-6 wow animated fadeInRight vertical-center" data-wow-delay=".2s">
           <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
               <!-- Name -->
@@ -150,9 +160,6 @@
       </div>
           </article>
           
-
-  
-
       <footer id="sticky-footer" class="py-4 bg-light text-dark">
         <div class="container text-center">
           <small>Copyright &copy; Artur Ćwikliński / 2019</small>
