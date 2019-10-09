@@ -20,6 +20,10 @@ html{
     font-weight: 300 !important;
     font-size:0.8rem !important;
   }
+
+  .col-sm{
+    padding-bottom: 30px;
+  }
 }
 
 @media (min-width: 930px){
@@ -91,6 +95,11 @@ html{
 
 .transparent-input{
   color:white !important;
+}
+
+.col-sm a{
+  color: white !important;
+  text-decoration: none !important;
 }
 
 

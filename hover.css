@@ -1,8 +1,8 @@
-.fa-github:hover, .fa-facebook:hover, .fa-instagram:hover{
-    color: rgb(148, 92, 92);
+.community:hover{
+    color: rgb(143, 110, 110);
 }
 
-.fa-github, .fa-facebook, .fa-instagram{
+.community{
     transition:0.5s ease-in-out;
 }
 

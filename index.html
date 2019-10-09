@@ -80,31 +80,37 @@
   <h2 class="pageSubTitle">Moje projekty:</h2>
   <section class="section-article">
     <div class="container vertical-center">
-      <div class="row mx-md-n5">
-        <div class="col-sm text-center">
-         <div class="h-100 p-3 portfolio-box">
-            <div class="m-5">
-                <i class="fas fa-cloud-upload-alt fa-7x"></i>
-            </div>
-            <h2 class="m-2 mb-5 row-text">Chmura na zdjęcia</h2>
-          </div>
+        <div class="row mx-md-n5">
+          <a href="https://github.com/SteelWro/photouploader-spring-vaadin">
+            <div class="col-sm text-center">
+                <div class="h-100 p-3 portfolio-box">
+                   <div class="m-5">
+                       <i class="fas fa-cloud-upload-alt fa-7x"></i>
+                   </div>
+                   <h2 class="m-2 mb-5 row-text">Chmura na zdjęcia</h2>
+             </div>
+          </a>
         </div>
         <div class="col-sm text-center">
-          <div class="h-100 p-3 portfolio-box">
-              <div class="m-5">
-                  <i class="fas fa-search fa-7x"></i>
+          <a href="https://github.com/SteelWro/OCR-spring-tess4j-jsp">
+              <div class="h-100 p-3 portfolio-box">
+                  <div class="m-5">
+                      <i class="fas fa-search fa-7x"></i>
+                    </div>
+                    <h2 class="m-2 mb-5 row-text">Rozpoznawanie tekstu na obrazie</h2>
                 </div>
-                <h2 class="m-2 mb-5 row-text">Rozpoznawanie tekstu na obrazie</h2>
-              </div>
-          </div>
+           </a>
+        </div>
         <div class="col-sm text-center">
-          <div class="h-100 p-3 portfolio-box">
-              <div class="m-5">
-                  <i class="fas fa-smog fa-7x"></i>
+          <a href="https://github.com/SteelWro/simplewatherapp">
+              <div class="h-100 p-3 portfolio-box">
+                  <div class="m-5">
+                      <i class="fas fa-smog fa-7x"></i>
+                  </div>
+                  <h2 class="m-2 mb-5 row-text">Pogodynka</h2>
+                </div>
               </div>
-              <h2 class="m-2 mb-5 row-text">Pogodynka</h2>
-            </div>
-          </div>
+          </a>
       </div>
     </section>
   </article>
@@ -113,9 +119,11 @@
     <section class="section-article">
       <div class="container vertical-center">
       <div class="row">
-          <div class="col-sm bg-transparent text-center"><i class="fab fa-github fa-9x"></i></div>
-            <div class="col-sm bg-transparent text-center"><i class="fab fa-facebook fa-9x"></i></div>
-            <div class="col-sm bg-transparent text-center"><i class="fab fa-instagram fa-9x"></i></div>         
+            <div class="col-sm bg-transparent text-center"><a href="https://github.com/SteelWro" target="_blank"><i class="fab fa-github fa-9x community"></i></a></div>
+            <div class="col-sm bg-transparent text-center"><a href="https://www.facebook.com/Stalowy.69" target="_blank"><i class="fab fa-facebook fa-9x community"></i></a></div>
+            <div class="col-sm bg-transparent text-center"><a href="https://www.instagram.com/stalowa_armia/" target="_blank"><i class="fab fa-instagram fa-9x community"></i></a></div>
+            <div class="col-sm bg-transparent text-center"><a href="https://www.linkedin.com/in/artur-ćwikliński-31335b132" target="_blank"><i class="fab fa-linkedin fa-9x community"></i></a></div>
+                 
     </div>
   </div>
     </section>
@@ -125,7 +133,7 @@
           <p>Możesz do mnie szybko wysłać maila <i class="fas fa-smile fa-1x"></i></p>
           <p>Pogadamy przy piwie? <i class="fas fa-beer fa-1x"></i></p></h2>
         <div class="col-md-6 wow animated fadeInRight vertical-center" data-wow-delay=".2s">
-          <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+          <form class="shake" role="form" method="POST" id="contactForm" name="contact-form" data-toggle="validator" action="mail.php">
               <!-- Name -->
               <div class="form-group label-floating">
                 <label class="control-label" for="name">Imię</label>
@@ -138,12 +146,12 @@
                 <input class="form-control transparent-input" id="email" type="email" name="email" required data-error="Please enter your Email">
                 <div class="help-block with-errors"></div>
               </div>
-              <!-- Subject -->
+              <!-- Subject
               <div class="form-group label-floating">
                 <label class="control-label">Temat</label>
                 <input class="form-control transparent-input" id="msg_subject" type="text" name="subject" required data-error="Please enter your message subject">
                 <div class="help-block with-errors"></div>
-              </div>
+              </div> -->
               <!-- Message -->
               <div class="form-group label-floating">
                   <label for="message" class="control-label">Wiadomość</label>
@@ -152,7 +160,7 @@
               </div>
               <!-- Form Submit -->
               <div class="form-submit mt-5">
-                  <button class="btn btn-outline-secondary border-white text-white" type="submit" id="form-submit"><i class="material-icons mdi mdi-message-outline"></i>Wyślij</button>
+                  <button class="btn btn-outline-secondary border-white text-white" type="submit" name="submit" id="form-submit"><i class="material-icons mdi mdi-message-outline"></i>Wyślij</button>
                   <div id="msgSubmit" class="h3 text-center hidden"></div>
                   <div class="clearfix"></div>
               </div>
@@ -162,7 +170,7 @@
           
       <footer id="sticky-footer" class="py-4 bg-light text-dark">
         <div class="container text-center">
-          <small>Copyright &copy; Artur Ćwikliński / 2019</small>
+          <small>Copyright &copy; Artur Ćwikliński / 2019 / artur@cwiklinski.me</small>
         </div>
       </footer>
 
