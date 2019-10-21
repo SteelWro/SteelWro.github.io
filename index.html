@@ -133,32 +133,23 @@
           <p>Możesz do mnie szybko wysłać maila <i class="fas fa-smile fa-1x"></i></p>
           <p>Pogadamy przy piwie? <i class="fas fa-beer fa-1x"></i></p></h2>
         <div class="col-md-6 wow animated fadeInRight vertical-center" data-wow-delay=".2s">
-          <form class="shake" role="form" method="POST" id="contactForm" name="contact-form" data-toggle="validator" action="mail.php">
-              <!-- Name -->
+         <div id="form-messages"></div>
+          <form class="shake" role="form" method="POST" id="ajax-contact" name="contact-form" data-toggle="validator" action="mailer.php">        
               <div class="form-group label-floating">
                 <label class="control-label" for="name">Imię</label>
                 <input class="form-control transparent-input" id="name" type="text" name="name" required data-error="Please enter your name">
                 <div class="help-block with-errors"></div>
               </div>
-              <!-- email -->
               <div class="form-group label-floating">
                 <label class="control-label" for="email">e-mail</label>
                 <input class="form-control transparent-input" id="email" type="email" name="email" required data-error="Please enter your Email">
                 <div class="help-block with-errors"></div>
-              </div>
-              <!-- Subject
-              <div class="form-group label-floating">
-                <label class="control-label">Temat</label>
-                <input class="form-control transparent-input" id="msg_subject" type="text" name="subject" required data-error="Please enter your message subject">
-                <div class="help-block with-errors"></div>
-              </div> -->
-              <!-- Message -->
+              </div>      
               <div class="form-group label-floating">
                   <label for="message" class="control-label">Wiadomość</label>
                   <textarea class="form-control transparent-input color-white" rows="3" id="message" name="message" required data-error="Write your message"></textarea>
                   <div class="help-block with-errors"></div>
-              </div>
-              <!-- Form Submit -->
+              </div>         
               <div class="form-submit mt-5">
                   <button class="btn btn-outline-secondary border-white text-white" type="submit" name="submit" id="form-submit"><i class="material-icons mdi mdi-message-outline"></i>Wyślij</button>
                   <div id="msgSubmit" class="h3 text-center hidden"></div>
@@ -176,17 +167,19 @@
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  <script src="jquery-2.1.0.min.js"></script>
+  <script src="app.js"></script>
+
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
   integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
   integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
+  </script> -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
   integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
-  <script src="app.js" crossorigin="anonymous"></script>
-  <script src="bower_components/scrollreveal/dist/scrollreveal.min.js"></script>
+  <!-- <script src="bower_components/scrollreveal/dist/scrollreveal.min.js"></script>
 <script>
     window.sr = ScrollReveal();
     sr.reveal('.revealTitle', {
@@ -198,7 +191,16 @@
         reset: true,
         delay: 300
     });
-</script>
+    $(window).scroll(function () {
+  parallax();
+});
+
+function parallax() {
+  var scrolled = $(window).scrollTop();
+  $('.background').css('top', -(scrolled * 0.15) + 'px');
+}
+
+</script> -->
 </body>
 
 </html>
