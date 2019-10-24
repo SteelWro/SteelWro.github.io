@@ -6,12 +6,12 @@
     transition:0.5s ease-in-out;
 }
 
-.portfolio-box:hover{
+.col-sm:hover{
     border-radius:20px;
     background: rgb(143, 110, 110);
 }
 
-.portfolio-box{
+.col-sm{
     -webkit-transition: background 0.5s ease-in-out, border-radius 1s ease-in-out;
     transition: background 0.5s ease-in-out, border-radius 1s ease-in-out;
 }
